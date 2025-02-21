@@ -12,13 +12,8 @@ layout: default
   {% assign x = coordinates[1] | plus: 0 %}
   {% assign y = coordinates[2] | plus: 0 %}
 
-  {% assign directions = 
-    "up,down,left,right" | split: "," 
-  %}
-  
-  {% assign direction_coords = 
-    "0,-1,0,1,-1,0,1,0" | split: ","
-  %}
+  {% assign directions = "up,down,left,right" | split: "," %}
+  {% assign direction_coords = "0,-1,0,1,-1,0,1,0" | split: "," %}
 
   {% for direction in directions %}
     {% assign index = forloop.index0 %}
@@ -32,7 +27,7 @@ layout: default
     {% assign new_y = y | plus: dy | plus: 0 %}
     
     {% assign room_name = "room_" | append: new_x | append: "_" | append: new_y %}
-    {% assign room_file = site.rooms | where: "path", "_rooms/" | append: room_name | append: ".md" | first %}
+    {% assign room_file = site.rooms | where: "name", room_name | first %}
     
     {% if room_file %}
       <li><a href="{{ room_file.url }}">{{ direction | capitalize }}</a></li>
