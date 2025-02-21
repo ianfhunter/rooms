@@ -5,43 +5,30 @@ layout: default
 <h1>{{ page.title }}</h1>
 <p>{{ page.description }}</p>
 
-<div class="navigation" id="navigation"></div>
+<h2>Doors:</h2>
+<ul>
+  {% assign current_room = page.title | downcase | slugify %}
+  {% assign coordinates = current_room | split: '_' %}
+  {% assign x = coordinates[1] | plus: 0 %}
+  {% assign y = coordinates[2] | plus: 0 %}
 
-<script>
-  const currentX = {{ page.x }};
-  const currentY = {{ page.y }};
-  const navigationDiv = document.getElementById('navigation');
+  {% assign directions = 
+    {
+      "up": [x, y | minus: 1],
+      "down": [x, y | plus: 1],
+      "left": [x | minus: 1, y],
+      "right": [x | plus: 1, y]
+    } 
+  %}
 
-  // Define possible directions based on coordinates
-  const directions = {
-    north: { x: currentX, y: currentY + 1 },
-    south: { x: currentX, y: currentY - 1 },
-    east: { x: currentX + 1, y: currentY },
-    west: { x: currentX - 1, y: currentY }
-  };
+  {% for direction, coords in directions %}
+    {% assign room_name = "room_" | append: coords[0] | append: "_" | append: coords[1] %}
+    {% if site.pages | where: "path", "_rooms/" | append: room_name | append: ".md" | first %}
+      <li><a href="/rooms/{{ room_name | slugify }}/">{{ direction | capitalize }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
 
-  // Check for available rooms based on coordinates
-  for (const [direction, coords] of Object.entries(directions)) {
-    const roomFile = `room_${coords.x}_${coords.y}.html`;
-    
-    fetch(`/_rooms/${roomFile}`)
-      .then(response => {
-        if (response.ok) {
-          const button = document.createElement('button');
-          button.innerText = `Go ${direction}`;
-          button.onclick = () => goToRoom(roomFile);
-          navigationDiv.appendChild(button);
-        }
-      })
-      .catch(error => {
-        console.error('Room not found:', roomFile);
-      });
-  }
-
-  function goToRoom(room) {
-    window.location.href = '{{ site.baseurl }}/_rooms/' + room;
-  }
-</script>
 
 
 {% include movement.html %}
