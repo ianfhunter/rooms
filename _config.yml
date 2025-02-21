@@ -3,6 +3,9 @@ title: Dungeon Experiment
 
 description: Github pages Dungeon
 
+baseurl: "/rooms/"
+
+
 # Don't Package these files
 # exclude: ["ReadMe.md", "Rakefile", "License.md"]
 
