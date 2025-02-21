@@ -29,8 +29,9 @@ layout: default
     {% assign room_filename = "room_" | append: new_x | append: "_" | append: new_y | append: ".md" %}
     <!-- {% assign room_file = site.rooms | where: "path", "_rooms/" | append: room_filename | first %} -->
     
+    {% assign room_path = "_rooms/" | append: room_filename %}
     {% for room in site.rooms %}
-        {% if room.path == "_rooms/" | append: room_filename %}
+        {% if room.path == room_path %}
             {% assign room_file = room %}
         {% endif %}
     {% endfor %}
