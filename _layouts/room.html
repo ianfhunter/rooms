@@ -23,12 +23,12 @@ layout: default
 
   {% for direction, coords in directions %}
     {% assign room_name = "room_" | append: coords[0] | append: "_" | append: coords[1] %}
-    {% if site.pages | where: "path", "_rooms/" | append: room_name | append: ".md" | first %}
-      <li><a href="/rooms/{{ room_name | slugify }}/">{{ direction | capitalize }}</a></li>
+    {% assign room_file = site.rooms | where: "path", "_rooms/" | append: room_name | append: ".md" | first %}
+    {% if room_file %}
+      <li><a href="{{ room_file.url }}">{{ direction | capitalize }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
-
 
 
 {% include movement.html %}
