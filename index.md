@@ -6,6 +6,7 @@ title: "Dungeon Entrance"
 <h1>Welcome to the Dungeon</h1>
 <p>Choose a room to enter:</p>
 
+v1:
 <ul>
   {% for room in site.pages %}
     {% if room.path contains '_rooms/' %}
@@ -13,6 +14,16 @@ title: "Dungeon Entrance"
         <a href="{{ room.url }}">{{ room.title }}</a>
       </li>
     {% endif %}
+  {% endfor %}
+</ul>
+
+v2:
+<ul>
+  {% assign rooms = site.pages | where: "path", "_rooms/" %}
+  {% for room in rooms %}
+    <li>
+      <a href="{{ room.url }}">{{ room.title }}</a>
+    </li>
   {% endfor %}
 </ul>
 
