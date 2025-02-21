@@ -6,49 +6,8 @@ description: Test
 permalink: test
 ---
 
-<style>
-.arrow-button {
-  position: fixed;
-  font-size: 30px; /* Adjust size as needed */
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 1000; /* Ensure buttons are on top */
-}
-
-.top {
-  top: 10px; /* Position at the top */
-  left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
-}
-
-.bottom {
-  bottom: 10px; /* Position at the bottom */
-  left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
-}
-
-.left {
-  top: 50%;
-  left: 10px; /* Position on the left */
-  transform: translateY(-50%); /* Center vertically */
-}
-
-.right {
-  top: 50%;
-  right: 10px; /* Position on the right */
-  transform: translateY(-50%); /* Center vertically */
-}
-
-</style>
-
-<div class="arrow-button top" onclick="alert('Top button clicked!')">&#9650;</div>
-<div class="arrow-button bottom" onclick="alert('Bottom button clicked!')">&#9660;</div>
-<div class="arrow-button left" onclick="alert('Left button clicked!')">&#9664;</div>
-<div class="arrow-button right" onclick="alert('Right button clicked!')">&#9654;</div>
-
-
 Hello.
 
 <script>console.log("Hi")</script>
+
+{% include arrow-buttons.html %}
