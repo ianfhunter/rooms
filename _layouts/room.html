@@ -13,22 +13,28 @@ layout: default
   {% assign y = coordinates[2] | plus: 0 %}
 
   {% assign directions = 
-    {
-      "up": [x, y | minus: 1],
-      "down": [x, y | plus: 1],
-      "left": [x | minus: 1, y],
-      "right": [x | plus: 1, y]
-    } 
+    "up,down,left,right" | split: "," 
+  %}
+  
+  {% assign direction_coords = 
+    "0,-1,0,1,-1,0,1,0" | split: ","
   %}
 
-  {% for direction, coords in directions %}
-    {% assign room_name = "room_" | append: coords[0] | append: "_" | append: coords[1] %}
+  {% for direction in directions %}
+    {% assign index = forloop.index0 %}
+    {% assign dx = direction_coords[index | times: 2] %}
+    {% assign dy = direction_coords[index | times: 2 | plus: 1] %}
+    
+    {% assign new_x = x | plus: dx %}
+    {% assign new_y = y | plus: dy %}
+    
+    {% assign room_name = "room_" | append: new_x | append: "_" | append: new_y %}
     {% assign room_file = site.rooms | where: "path", "_rooms/" | append: room_name | append: ".md" | first %}
+    
     {% if room_file %}
       <li><a href="{{ room_file.url }}">{{ direction | capitalize }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
-
 
 {% include movement.html %}
