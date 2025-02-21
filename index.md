@@ -1,14 +1,19 @@
 ---
-layout: page
-title: Homepage
-tagline: Homepage
-description: Homepage
+layout: default
+title: "Dungeon Entrance"
 ---
 
 <h1>Welcome to the Dungeon</h1>
 <p>Choose a room to enter:</p>
+
 <ul>
-  <li><a href="/rooms/room1/">Room 1</a></li>
-  <li><a href="/rooms/room2/">Room 2</a></li>
-  <li><a href="/rooms/room3/">Room 3</a></li>
+  {% for room in site.pages %}
+    {% if room.path starts with '_rooms/' %}
+      <li>
+        <a href="{{ room.url }}">{{ room.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
 </ul>
+
+<p>Explore the rooms and find your way through the dungeon!</p>
