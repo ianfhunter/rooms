@@ -22,8 +22,11 @@ layout: default
 
   {% for direction in directions %}
     {% assign index = forloop.index0 %}
-    {% assign dx = direction_coords[index | times: 2] %}
-    {% assign dy = direction_coords[index | times: 2 | plus: 1] %}
+    {% assign dx_index = index | times: 2 %}
+    {% assign dy_index = index | times: 2 | plus: 1 %}
+    
+    {% assign dx = direction_coords[dx_index] %}
+    {% assign dy = direction_coords[dy_index] %}
     
     {% assign new_x = x | plus: dx | plus: 0 %}
     {% assign new_y = y | plus: dy | plus: 0 %}
