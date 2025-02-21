@@ -27,10 +27,17 @@ layout: default
     {% assign new_y = y | plus: dy | plus: 0 %}
     
     {% assign room_filename = "room_" | append: new_x | append: "_" | append: new_y | append: ".md" %}
-    {% assign room_file = site.rooms | where: "path", "_rooms/" | append: room_filename | first %}
+    <!-- {% assign room_file = site.rooms | where: "path", "_rooms/" | append: room_filename | first %} -->
     
+    {% for room in site.rooms %}
+        {% if room.path == "_rooms/" | append: room_filename %}
+            {% assign room_file = room %}
+        {% endif %}
+    {% endfor %}
+
     <p>Looking for Room: {{ room_filename }}</p>
     <p>@ Room File: {{ room_file }}</p>
+    <p>{{site.rooms}}</p>
 
     {% if room_file %}
       <li><a href="{{ site.baseurl }}/{{ room_file.url }}">{{ direction | capitalize }}</a></li>
