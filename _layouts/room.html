@@ -25,8 +25,8 @@ layout: default
     {% assign dx = direction_coords[index | times: 2] %}
     {% assign dy = direction_coords[index | times: 2 | plus: 1] %}
     
-    {% assign new_x = x | plus: dx %}
-    {% assign new_y = y | plus: dy %}
+    {% assign new_x = x | plus: dx | plus: 0 %}
+    {% assign new_y = y | plus: dy | plus: 0 %}
     
     {% assign room_name = "room_" | append: new_x | append: "_" | append: new_y %}
     {% assign room_file = site.rooms | where: "path", "_rooms/" | append: room_name | append: ".md" | first %}
