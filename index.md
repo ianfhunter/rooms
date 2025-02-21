@@ -10,7 +10,7 @@ v1:
 <ul>
   {% for room in site.rooms %}
     <li>
-      <a href="{{ room.url }}">{{ room.title }}</a>
+      <a href="{{ site.baseurl }}/{{ room.url }}">{{ room.title }}</a>
     </li>
   {% endfor %}
 </ul>

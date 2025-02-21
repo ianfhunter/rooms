@@ -30,7 +30,7 @@ layout: default
     {% assign room_file = site.rooms | where: "name", room_name | first %}
     
     {% if room_file %}
-      <li><a href="{{ room_file.url }}">{{ direction | capitalize }}</a></li>
+      <li><a href="{{ site.baseurl }}/{{ room_file.url }}">{{ direction | capitalize }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
