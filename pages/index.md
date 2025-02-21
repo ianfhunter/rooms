@@ -1,8 +1,9 @@
 ---
 layout: page
-title: simple site
+title: test site
 tagline: GitHub Pages Sample
 description: Test
+permalink: test
 ---
 
 Hello.
