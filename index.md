@@ -8,7 +8,7 @@ title: "Dungeon Entrance"
 
 <ul>
   {% for room in site.pages %}
-    {% if room.path starts with '_rooms/' %}
+    {% if room.path contains '_rooms/' %}
       <li>
         <a href="{{ room.url }}">{{ room.title }}</a>
       </li>
