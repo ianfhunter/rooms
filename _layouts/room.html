@@ -26,7 +26,7 @@ layout: default
     {% assign new_x = x | plus: dx | plus: 0 %}
     {% assign new_y = y | plus: dy | plus: 0 %}
     
-    {% assign room_filename = "room_" | append: new_x | append: "_" | append: new_y | append: .md %}
+    {% assign room_filename = "room_" | append: new_x | append: "_" | append: new_y | append: ".md" %}
     {% assign room_file = site.rooms | where: "path", "_rooms/" | append: room_filename | first %}
     
     <p>Looking for Room: {{ room_filename }}</p>
