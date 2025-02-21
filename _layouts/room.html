@@ -31,6 +31,7 @@ layout: default
     
     {% assign room_path = "_rooms/" | append: room_filename %}
     {% for room in site.rooms %}
+        COMPARE: {{room.path}} VERSUS {{room_path}}
         {% if room.path == room_path %}
             {% assign room_file = room %}
         {% endif %}
