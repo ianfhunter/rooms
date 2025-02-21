@@ -29,6 +29,9 @@ layout: default
     {% assign room_name = "room_" | append: new_x | append: "_" | append: new_y %}
     {% assign room_file = site.rooms | where: "name", room_name | first %}
     
+    <p>Looking for Room: {{ room_name }}</p>
+    <p>@ Room File: {{ room_file }}</p>
+
     {% if room_file %}
       <li><a href="{{ site.baseurl }}/{{ room_file.url }}">{{ direction | capitalize }}</a></li>
     {% endif %}
