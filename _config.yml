@@ -4,7 +4,7 @@ title: Dungeon Experiment
 description: Github pages Dungeon
 
 # Don't Package these files
-exclude: ["ReadMe.md", "Rakefile", "License.md"]
+# exclude: ["ReadMe.md", "Rakefile", "License.md"]
 
 # Search
 lsi: false
