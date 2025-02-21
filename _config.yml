@@ -1,1 +1,19 @@
 exclude: ["ReadMe.md", "Rakefile", "License.md"]
+
+# Search
+lsi: false
+
+safe: true
+
+source: .
+
+# Full Rebuild
+incremental: false
+highlighter: rouge
+
+gist:
+  noscript: false
+  
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
