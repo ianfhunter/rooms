@@ -6,8 +6,8 @@ description: Test
 permalink: test
 ---
 
-Hello.
+Begin Your Adventure.
 
 <script>console.log("Hi")</script>
 
-{% include arrow-buttons.html %}
+<a href="room1">Starting Room</a>
