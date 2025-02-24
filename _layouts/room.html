@@ -14,6 +14,7 @@ layout: default
 
   <script>
     console.log("{{page.name}} -> {{current_room}} -> {{ coordinates }} -> {{ x }} & {{ y }}");
+    console.log("{{page.name}} / {{page.path}} / {{page.slug}}");
   </script>
 
   {% assign directions = "up,down,left,right" | split: "," %}
