@@ -2,12 +2,16 @@
     padding: 15px;
     border: 1px solid;
     border-radius: 5px;
+    .icon {
+        margin-right: 5px;
+        font-weight: bolder;
+    }
 }
 
-.monster .icon, .item .icon {
+/* .monster .icon, .item .icon {
     margin-right: 5px;
     font-weight: bolder;
-}
+} */
 
 .monster {
     color: rgb(46, 110, 9);
