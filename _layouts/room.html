@@ -12,11 +12,6 @@ layout: default
   {% assign x = coordinates[0] | plus: 0 %}
   {% assign y = coordinates[1] | plus: 0 %}
 
-  <script>
-    console.log("{{page.slug}} -> {{current_room}} -> {{ coordinates }} -> {{ x }} & {{ y }}");
-    console.log("{{page.name}} / {{page.path}} / {{page.slug}}");
-  </script>
-
   {% assign directions = "up,down,left,right" | split: "," %}
   {% assign direction_coords = "0,-1, 0,1, -1,0, 1,0" | split: "," %}
 
@@ -42,15 +37,8 @@ layout: default
             {% assign room_file = room %}
         {% endif %}
     {% endfor %}
-    <script>
-      console.log("{{direction}}?: {{ x }}, {{ y }} + {{ dx }}, {{ dy }} = {{ new_x }}, {{ new_y }}");
-      console.log("{{direction}}?: {{ room_filename }}");
-    </script>
 
     {% if room_file %}
-        <!-- <script>
-          console.log("{{direction}} exists: {{ room_file.url }}");
-        </script> -->
         <a href="{{ site.baseurl }}/{{ room_file.url }}">{{ direction | capitalize }} {{ icon }} </a><br />
     {% endif %}
     {% assign room_file = nil %} <!-- Reset -->
