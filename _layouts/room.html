@@ -8,7 +8,7 @@ layout: default
 <h2>Doors:</h2>
 
   {% assign current_room = page.filename | downcase %}
-  {% assign coordinates = current_room | split: '_' %}
+  {% assign coordinates = current_room | remove: 'room_' | split: '_' %}
   <!-- {% assign current_room = page.title | downcase %}
   {% assign coordinates = current_room | remove: 'room (' | remove: ')' | split: ', ' %} -->
   {% assign x = coordinates[0] | plus: 0 %}
@@ -16,9 +16,9 @@ layout: default
 
   {% assign directions = "up,down,left,right" | split: "," %}
   {% assign direction_coords = "0,-1, 0,1, -1,0, 1,0" | split: "," %}
-  {% assign direction_icons = "&#9650; &#9660; &#9664; &#9654;" | split: " " %}
+  <!-- {% assign direction_icons = "&#9650; &#9660; &#9664; &#9654;" | split: " " %} -->
 
-  <!-- {% assign direction_icons = "&#8679; &#8681; &#8678; &#8680;" | split: " " %} -->
+  {% assign direction_icons = "&#8679; &#8681; &#8678; &#8680;" | split: " " %}
 
   {% for direction in directions %}
     {% assign index = forloop.index0 %}
