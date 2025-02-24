@@ -40,15 +40,15 @@ layout: default
             {% assign room_file = room %}
         {% endif %}
     {% endfor %}
-    <script>
+    <!-- <script>
       console.log("{{direction}}?: {{ x }}, {{ y }} + {{ dx }}, {{ dy }} = {{ new_x }}, {{ new_y }}");
       console.log("{{direction}}?: {{ room_filename }}");
-    </script>
+    </script> -->
 
     {% if room_file %}
-        <script>
+        <!-- <script>
           console.log("{{direction}} exists: {{ room_file.url }}");
-        </script>
+        </script> -->
         <a href="{{ site.baseurl }}/{{ room_file.url }}">{{ direction | capitalize }} {{ icon }} </a><br />
     {% endif %}
     {% assign room_file = nil %} <!-- Reset -->
