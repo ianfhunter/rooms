@@ -1,6 +1,6 @@
 ---
 layout: room
-title: "Room (1, 0)"
+title: "Empty Room"
 ---
 
 "You are in the room below the starting room. There is nothing here."
