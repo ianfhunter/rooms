@@ -1,6 +1,6 @@
 ---
 layout: room
-title: "Snow time like the present"
+title: "The Winter God's Chamber"
 weather: "snow"
 puzzle-lock: true
 ---
@@ -9,21 +9,40 @@ It is snowing in this room.
 
 {% comment %}
 Answer: 
+Aela	Icicle	Winter	Dreams	Goblins	Dragon
+Sovik	Coin	War	Trade	Dwarves	Snake
+Wiim	Spear	Love	Nature	Elves	Owl
+Brú	Raindrop	Death	Harvest	Fairies	Horse
+Losh	Sickle	Justice	Travel	Humans	Dire Wolf
 {% endcomment %}
 
 The doors lock behind you. It seems you cannot proceed without solving the puzzle.
 
-A dead priest lies nearby with a bite wound. You find a scroll in his pocket:
+A dead priest lies nearby with a bite wound on his leg. You find a set of scrolls in his pocket, compiled together in what seems like a diary:
 
 <div class="scroll">
-    I came here with a symbol of the winter god. An amulet with the image of an icicle. I pray it protect me in my travels. I hope my favour to the winter god does not anger Losh. I suppose will know if I see wolves on my way. 
+    <b>Day 11<b>
+    The road is long and boresome. We passed by a few minor shrines. We stopped at the one for Travel, it was amusing to see someone had confused it with the Harvest. I'm sure the humans who visit the shrine next won't mind the offering of baked good though.
     <p></p>
-    I have done good by the others, I have given coin to the trade god so they will not set their dwarven bandits on me.
+    <b>Day 24</b>
     <p></p>
-    ... Several entries later ...
+    What have I done to forsake the gods? In just one day I have been assaulted twice! First, by dwarven bandits, despite my donation of coin to the trade god. And then by a pack of elven spearmen. I suspect they may have used owls to watch me as I travelled by night. I must be more careful. I hastily drew a raindrop on my steed's rump in the vain attempt of disuading any other god's setting their followers on me.
     <p></p>
-    My student has chosen to abandon me on this journey. He claims a revelation has come over him, choosing to follow the church of Justice. Though, I heavily suspect he has fallen for a young lass in the last tavern we came through, for they talked at length about Wiim and his blessings of Love. Bah! All my training, for him to leave me like this.
-
+    <b>Day 32</b>
+    <p></p>
+    What have I done to forsake the gods? In just one day I have been assaulted twice! First, by dwarven bandits, despite my donation of coin to the trade god. And then by a pack of elven spearmen. I suspect they may have used owls to watch me as I travelled by night. I must be more careful. 
+    <p></p>
+    <b>Day 49</b>
+    <p></p>
+    A quick stop in the Sword & Spade and we'll be off again. The villagers have a shrine to the Fairy Queen Brú. I offered something at her shrine. May Aela understand, I did not do it out of worship, but out of fear. It tempts fate to pass by a shrine of Death and ignore it.
+    <p></p>
+    <b>Day 51</b>
+    <p></p>
+    My apprentice has chosen to abandon me on this journey. He claims a revelation has come over him, choosing to disregard Aela and follow the church of Justice. Though, I heavily suspect he may not be headed there at all, for he was awful talkative with a young lass in the last tavern we passed through - talking at length about Wiim and the wonders of Love. Bah! All my training, for him to leave me and the godess like this. May Aela make his dreams be full of woe!
+    <p></p>
+    <b>Day 86</b>
+    <p></p>
+    Finally, we arrived at the dungeon. I felt my preparations worthwhile when I saw a snake passing in front of me as I entered into the Winter God's chamber. But alas, in my folly I forgot that it was the God of War and Trade's companion. I was so frustrated by my apprentice going to that Nature-loving god's bosum, that I forgot my basic teaching. And even if I were a Winter-loving Goblin, that symbol of Ice was going to do nothing when that snake bit me. So, I suppose that's my end. To die here, whether by ice or poison first. If you find this book, please let my apprentice know it was his fault.
 </div>
 
 <div class="puzzle" data-puzzle-name="The Whispering Runes">
