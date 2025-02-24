@@ -7,13 +7,13 @@ layout: default
 
 <h2>Doors:</h2>
 
-  {% assign current_room = page.name | downcase %}
+  {% assign current_room = page.slug | downcase %}
   {% assign coordinates = current_room | remove: 'room_' | split: '_' %}
   {% assign x = coordinates[0] | plus: 0 %}
   {% assign y = coordinates[1] | plus: 0 %}
 
   <script>
-    console.log("{{page.name}} -> {{current_room}} -> {{ coordinates }} -> {{ x }} & {{ y }}");
+    console.log("{{page.slug}} -> {{current_room}} -> {{ coordinates }} -> {{ x }} & {{ y }}");
     console.log("{{page.name}} / {{page.path}} / {{page.slug}}");
   </script>
 
