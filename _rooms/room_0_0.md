@@ -19,13 +19,15 @@ Answer: F W E A W F A
 <div class="scroll">
     It appears there's a scroll nearby. The contents seems like nonsense.
 
-    Confirmed
-    Afterwards
-    Charter
-    Cavalier
-    Strawberries
-    Suffering
-    Viscera
+    <ul>
+        <li>Confirmed</li>
+        <li>Afterwards</li>
+        <li>Charter</li>
+        <li>Cavalier</li>
+        <li>Strawberries</li>
+        <li>Suffering</li>
+        <li>Viscera</li>
+    </ul>
 </div>
 
 The doors lock behind you. It seems you cannot proceed without solving the puzzle.
