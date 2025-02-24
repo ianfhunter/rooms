@@ -12,7 +12,7 @@ As you enter, the air feels thick with anticipation. The walls are adorned with 
 Answer: F W E A W F A
 {% endcomment %}
 <audio controls>
-  <source src="whispers.wav" type="audio/wav">
+  <source src="{{ '/assets/audio/whispers.wav' | relative_url }}" type="audio/wav">
    Your browser does not support the audio. However, it does appear there's a scroll nearby instead.
 
    <div class="scroll">
