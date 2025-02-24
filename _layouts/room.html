@@ -12,6 +12,10 @@ layout: default
   {% assign x = coordinates[0] | plus: 0 %}
   {% assign y = coordinates[1] | plus: 0 %}
 
+  <script>
+    console.log("{{page.filename}} -> {{current_room}} -> {{ coordinates }} -> {{ x }} & {{ y }}");
+  </script>
+
   {% assign directions = "up,down,left,right" | split: "," %}
   {% assign direction_coords = "0,-1, 0,1, -1,0, 1,0" | split: "," %}
 

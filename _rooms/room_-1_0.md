@@ -1,6 +1,6 @@
 ---
 layout: room
-title: "Bucket Room"
+title: "Raining Room"
 weather: "rain"
 ---
 
