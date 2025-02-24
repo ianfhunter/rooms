@@ -7,8 +7,10 @@ layout: default
 
 <h2>Doors:</h2>
 
-  {% assign current_room = page.title | downcase %}
-  {% assign coordinates = current_room | remove: 'room (' | remove: ')' | split: ', ' %}
+  {% assign current_room = page.filename | downcase %}
+  {% assign coordinates = current_room | split: '_' %}
+  <!-- {% assign current_room = page.title | downcase %}
+  {% assign coordinates = current_room | remove: 'room (' | remove: ')' | split: ', ' %} -->
   {% assign x = coordinates[0] | plus: 0 %}
   {% assign y = coordinates[1] | plus: 0 %}
 
