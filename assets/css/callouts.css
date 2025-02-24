@@ -1,4 +1,4 @@
-.monster, .item {
+.monster, .item, .puzzle {
     padding: 15px;
     border: 1px solid;
     border-radius: 5px;
@@ -23,6 +23,11 @@
     color: rgb(216, 145, 12);
     border-color: rgb(216, 145, 12);
     background-color: rgb(254, 244, 225);
+}
+.puzzle {
+    color: rgb(12, 32, 216);
+    border-color: rgb(12, 32, 216);
+    background-color: rgb(227, 225, 254);
 }
 
 .icon i {
