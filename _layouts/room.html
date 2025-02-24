@@ -6,20 +6,11 @@ layout: default
 <p>{{ page.description }}</p>
 
 <h2>Doors:</h2>
-<!-- <ul> -->
-  <!-- {% assign current_room = page.title | downcase | slugify %}
-  {% assign coordinates = current_room | split: '_' %}
-  {% assign x = coordinates[1] | plus: 0 %}
-  {% assign y = coordinates[2] | plus: 0 %} -->
 
   {% assign current_room = page.title | downcase %}
   {% assign coordinates = current_room | remove: 'room (' | remove: ')' | split: ', ' %}
   {% assign x = coordinates[0] | plus: 0 %}
   {% assign y = coordinates[1] | plus: 0 %}
-  <script>
-    console.log("X Coordinate: {{ x }}");
-    console.log("Y Coordinate: {{ y }}");
-  </script>
 
   {% assign directions = "up,down,left,right" | split: "," %}
   {% assign direction_coords = "0,-1, 0,1, -1,0, 1,0" | split: "," %}
@@ -33,25 +24,11 @@ layout: default
     
     {% assign dx = direction_coords[dx_index] %}
     {% assign dy = direction_coords[dy_index] %}
-
-    
-    <script>
-        console.log("{{direction}} rel: {{ dx }}, {{ dy }}");
-   </script>
     
     {% assign new_x = x | plus: dx | plus: 0 %}
     {% assign new_y = y | plus: dy | plus: 0 %}
-
-    
-    <script>
-        console.log("{{direction}} abs: {{ new_x }}, {{ new_y }}");
-   </script>
     
     {% assign room_filename = "room_" | append: new_x | append: "_" | append: new_y | append: ".md" %}
-
-    <script>
-        console.log("{{ room_filename }}");
-    </script>
 
     {% assign room_path = "_rooms/" | append: room_filename %}
     {% for room in site.rooms %}
@@ -61,17 +38,11 @@ layout: default
     {% endfor %}
 
     {% if room_file %}
-    
         <script>
             console.log("{{direction}}: {{ room_file.url }}");
-       </script>
-      <!-- <li> -->
+        </script>
         <a href="{{ site.baseurl }}/{{ room_file.url }}">{{ direction | capitalize }} {{ icon }} </a><br />
-    <!-- </li> -->
-      <!-- <div class="arrow-button {{direction}}" onclick="alert('{{direction}} button clicked!')">{{ icon }}</div> -->
     {% endif %}
     {% assign room_file = nil %} <!-- Reset -->
   {% endfor %}
-<!-- </ul> -->
-
 {% include movement.html %}
