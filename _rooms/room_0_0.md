@@ -24,7 +24,12 @@ There are four sets of runes on the walls, each representing a different element
 
 When you speak a word aloud while looking into the mirror, the mirror will reflect a faint glow if the word is part of the correct sequence. If the word is incorrect, the mirror remains dark.
 
-<button>⛰️</button><button>🔥</button><button>🌪️</button><button>🌊</button>
+<div style="text-align:center">
+    <button>⛰️</button>
+    <button>🔥</button>
+    <button>🌪️</button>
+    <button>🌊</button>
+</div>
 <!-- 
 Solution:
 To solve the puzzle, players must:
