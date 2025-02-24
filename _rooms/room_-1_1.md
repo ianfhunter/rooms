@@ -13,10 +13,16 @@ Answer:
 
 The doors lock behind you. It seems you cannot proceed without solving the puzzle.
 
-A dead priest lies nearby, You find a scroll in his pocket:
+A dead priest lies nearby with a bite wound. You find a scroll in his pocket:
 
 <div class="scroll">
-    The god of winter, Aelin is gracious. <br />
+    I came here with a symbol of the winter god. An amulet with the image of an icicle. I pray it protect me in my travels. I hope my favour to the winter god does not anger Losh. I suppose will know if I see wolves on my way. 
+    <p></p>
+    I have done good by the others, I have given coin to the trade god so they will not set their dwarven bandits on me.
+    <p></p>
+    ... Several entries later ...
+    <p></p>
+    My student has chosen to abandon me on this journey. He claims a revelation has come over him, choosing to follow the church of Justice. Though, I heavily suspect he has fallen for a young lass in the last tavern we came through, for they talked at length about Wiim and his blessings of Love. Bah! All my training, for him to leave me like this.
 
 </div>
 
@@ -47,47 +53,52 @@ A dead priest lies nearby, You find a scroll in his pocket:
     <td class="tg-1wig">Symbol</td>
     <td>
         <select>
-            <option value="">Spear</option>
-            <option value="">Sickle</option>
-            <option value="">Raindrop</option>
-            <option value="">Icicle</option>
-            <option value="">Coin</option>
+            <option value=""></option>
+            <option value="Spear">Spear</option>
+            <option value="Sickle">Sickle</option>
+            <option value="Raindrop">Raindrop</option>
+            <option value="Icicle">Icicle</option>
+            <option value="Coin">Coin</option>
         </select>
     </td>
     <td>
         <select>
-            <option value="">Spear</option>
-            <option value="">Sickle</option>
-            <option value="">Raindrop</option>
-            <option value="">Icicle</option>
-            <option value="">Coin</option>
+            <option value=""></option>
+            <option value="Spear">Spear</option>
+            <option value="Sickle">Sickle</option>
+            <option value="Raindrop">Raindrop</option>
+            <option value="Icicle">Icicle</option>
+            <option value="Coin">Coin</option>
         </select>
     </td>
     <td>
         <select>
-            <option value="">Spear</option>
-            <option value="">Sickle</option>
-            <option value="">Raindrop</option>
-            <option value="">Icicle</option>
-            <option value="">Coin</option>
+            <option value=""></option>
+            <option value="Spear">Spear</option>
+            <option value="Sickle">Sickle</option>
+            <option value="Raindrop">Raindrop</option>
+            <option value="Icicle">Icicle</option>
+            <option value="Coin">Coin</option>
         </select>
     </td>
     <td>
         <select>
-            <option value="">Spear</option>
-            <option value="">Sickle</option>
-            <option value="">Raindrop</option>
-            <option value="">Icicle</option>
-            <option value="">Coin</option>
+            <option value=""></option>
+            <option value="Spear">Spear</option>
+            <option value="Sickle">Sickle</option>
+            <option value="Raindrop">Raindrop</option>
+            <option value="Icicle">Icicle</option>
+            <option value="Coin">Coin</option>
         </select>
     </td>
     <td>
         <select>
-            <option value="">Spear</option>
-            <option value="">Sickle</option>
-            <option value="">Raindrop</option>
-            <option value="">Icicle</option>
-            <option value="">Coin</option>
+            <option value=""></option>
+            <option value="Spear">Spear</option>
+            <option value="Sickle">Sickle</option>
+            <option value="Raindrop">Raindrop</option>
+            <option value="Icicle">Icicle</option>
+            <option value="Coin">Coin</option>
         </select>
     </td>
     <!-- <td class="tg-0lax">Spear</td>
@@ -98,49 +109,218 @@ A dead priest lies nearby, You find a scroll in his pocket:
   </tr>
   <tr>
     <td class="tg-1wig">Major Domain</td>
-    <td class="tg-0lax">Justice</td>
-    <td class="tg-0lax">Death</td>
-    <td class="tg-0lax">Love</td>
-    <td class="tg-0lax">Winter</td>
-    <td class="tg-0lax">War</td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Justice">Justice</option>
+            <option value="Death">Death</option>
+            <option value="Love">Love</option>
+            <option value="Winter">Winter</option>
+            <option value="War">War</option>
+        </select>
+    </td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Justice">Justice</option>
+            <option value="Death">Death</option>
+            <option value="Love">Love</option>
+            <option value="Winter">Winter</option>
+            <option value="War">War</option>
+        </select>
+    </td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Justice">Justice</option>
+            <option value="Death">Death</option>
+            <option value="Love">Love</option>
+            <option value="Winter">Winter</option>
+            <option value="War">War</option>
+        </select>
+    </td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Justice">Justice</option>
+            <option value="Death">Death</option>
+            <option value="Love">Love</option>
+            <option value="Winter">Winter</option>
+            <option value="War">War</option>
+        </select>
+    </td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Justice">Justice</option>
+            <option value="Death">Death</option>
+            <option value="Love">Love</option>
+            <option value="Winter">Winter</option>
+            <option value="War">War</option>
+        </select>
+    </td>
   </tr>
   <tr>
     <td class="tg-1wig">Minor Domain</td>
-    <td class="tg-0lax">Travel</td>
-    <td class="tg-0lax">Harvest</td>
-    <td class="tg-0lax">Nature</td>
-    <td class="tg-0lax">Dreams</td>
-    <td class="tg-0lax">Trade</td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Travel">Travel</option>
+            <option value="Harvest">Harvest</option>
+            <option value="Nature">Nature</option>
+            <option value="Dreams">Dreams</option>
+            <option value="Trade">Trade</option>
+        </select>
+    </td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Travel">Travel</option>
+            <option value="Harvest">Harvest</option>
+            <option value="Nature">Nature</option>
+            <option value="Dreams">Dreams</option>
+            <option value="Trade">Trade</option>
+        </select>
+    </td><td>
+        <select>
+            <option value=""></option>
+            <option value="Travel">Travel</option>
+            <option value="Harvest">Harvest</option>
+            <option value="Nature">Nature</option>
+            <option value="Dreams">Dreams</option>
+            <option value="Trade">Trade</option>
+        </select>
+    </td><td>
+        <select>
+            <option value=""></option>
+            <option value="Travel">Travel</option>
+            <option value="Harvest">Harvest</option>
+            <option value="Nature">Nature</option>
+            <option value="Dreams">Dreams</option>
+            <option value="Trade">Trade</option>
+        </select>
+    </td><td>
+        <select>
+            <option value=""></option>
+            <option value="Travel">Travel</option>
+            <option value="Harvest">Harvest</option>
+            <option value="Nature">Nature</option>
+            <option value="Dreams">Dreams</option>
+            <option value="Trade">Trade</option>
+        </select>
+    </td>
   </tr>
   <tr>
     <td class="tg-1wig">Worshippers</td>
-    <td class="tg-0lax">Dwarves</td>
-    <td class="tg-0lax">Fairies</td>
-    <td class="tg-0lax">Elves</td>
-    <td class="tg-0lax">Humans</td>
-    <td class="tg-0lax">Goblins</td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Dwarves">Dwarves</option>
+            <option value="Fairies">Fairies</option>
+            <option value="Elves">Elves</option>
+            <option value="Humans">Humans</option>
+            <option value="Goblins">Goblins</option>
+        </select>
+    </td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Dwarves">Dwarves</option>
+            <option value="Fairies">Fairies</option>
+            <option value="Elves">Elves</option>
+            <option value="Humans">Humans</option>
+            <option value="Goblins">Goblins</option>
+        </select>
+    </td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Dwarves">Dwarves</option>
+            <option value="Fairies">Fairies</option>
+            <option value="Elves">Elves</option>
+            <option value="Humans">Humans</option>
+            <option value="Goblins">Goblins</option>
+        </select>
+    </td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Dwarves">Dwarves</option>
+            <option value="Fairies">Fairies</option>
+            <option value="Elves">Elves</option>
+            <option value="Humans">Humans</option>
+            <option value="Goblins">Goblins</option>
+        </select>
+    </td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Dwarves">Dwarves</option>
+            <option value="Fairies">Fairies</option>
+            <option value="Elves">Elves</option>
+            <option value="Humans">Humans</option>
+            <option value="Goblins">Goblins</option>
+        </select>
+    </td>
   </tr>
   <tr>
     <td class="tg-1wig">Companion</td>
-    <td class="tg-0lax">Owl</td>
-    <td class="tg-0lax">Dire wolf</td>
-    <td class="tg-0lax">Dragon</td>
-    <td class="tg-0lax">Horse</td>
-    <td class="tg-0lax">Snake</td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Owl">Owl</option>
+            <option value="Dire wolf">Dire wolf</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Horse">Horse</option>
+            <option value="Snake">Snake</option>
+        </select>
+    </td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Owl">Owl</option>
+            <option value="Dire wolf">Dire wolf</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Horse">Horse</option>
+            <option value="Snake">Snake</option>
+        </select>
+    </td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Owl">Owl</option>
+            <option value="Dire wolf">Dire wolf</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Horse">Horse</option>
+            <option value="Snake">Snake</option>
+        </select>
+    </td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Owl">Owl</option>
+            <option value="Dire wolf">Dire wolf</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Horse">Horse</option>
+            <option value="Snake">Snake</option>
+        </select>
+    </td>
+    <td>
+        <select>
+            <option value=""></option>
+            <option value="Owl">Owl</option>
+            <option value="Dire wolf">Dire wolf</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Horse">Horse</option>
+            <option value="Snake">Snake</option>
+        </select>
+    </td>
   </tr>
 </tbody></table>
 
-<b>The Whispering Runes</b>
-
-There are four sets of runes on the walls, each representing a different element: Fire, Water, Earth, and Air. Each set has three runes, each inscribed with a word related to its element (e.g., Fire: Flame, Ember, Ash).
-
-When you speak a word aloud while looking into the mirror, the mirror will reflect a faint glow if the word is part of the correct sequence. If the word is incorrect, the mirror remains dark.
 
 <div style="text-align:center">
-    <button>⛰️</button>
-    <button>🔥</button>
-    <button>🌪️</button>
-    <button>🌊</button>
+    <button>Submit</button>
 </div>
 <p id="message"></p>
 
