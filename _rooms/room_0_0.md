@@ -4,13 +4,14 @@ title: "The Chamber of Echoes"
 puzzle-lock: true
 ---
 
+{% comment %}
+Answer: F W E A W F A
+{% endcomment %}
+
 At the very heart of the dungeon, is the Chamber of Echoes.
 
 As you enter, the air feels thick with anticipation. The walls are adorned with ancient runes that shimmer faintly in the dim light. In the center of the room stands a large stone pedestal, upon which rests a beautifully crafted silver mirror. The mirror reflects not only your image but also faint whispers that seem to emanate from the walls, creating an eerie atmosphere.
 
-{% comment %}
-Answer: F W E A W F A
-{% endcomment %}
 <!-- <audio controls>
   <source src="{{ '/assets/audio/whispers.wav' | relative_url }}" type="audio/wav">
    
@@ -18,17 +19,9 @@ Answer: F W E A W F A
 
 The doors lock behind you. It seems you cannot proceed without solving the puzzle.
 
-<div class="puzzle" data-puzzle-name="The Whispering Runes">
-<b>The Whispering Runes</b>
 
-There are four sets of runes on the walls, each representing a different element: Fire, Water, Earth, and Air. Each set has three runes, each inscribed with a word related to its element (e.g., Fire: Flame, Ember, Ash).
-
-When you speak a word aloud while looking into the mirror, the mirror will reflect a faint glow if the word is part of the correct sequence. If the word is incorrect, the mirror remains dark.
-
-
+It appears there's a scroll nearby. However, the contents seems like nonsense.
 <div class="scroll">
-    It appears there's a scroll nearby. However, the contents seems like nonsense.
-
     <ul>
         <li>Confirmed</li>
         <li>Afterwards</li>
@@ -39,6 +32,13 @@ When you speak a word aloud while looking into the mirror, the mirror will refle
         <li>Viscera</li>
     </ul>
 </div>
+
+<div class="puzzle" data-puzzle-name="The Whispering Runes">
+<b>The Whispering Runes</b>
+
+There are four sets of runes on the walls, each representing a different element: Fire, Water, Earth, and Air. Each set has three runes, each inscribed with a word related to its element (e.g., Fire: Flame, Ember, Ash).
+
+When you speak a word aloud while looking into the mirror, the mirror will reflect a faint glow if the word is part of the correct sequence. If the word is incorrect, the mirror remains dark.
 
 <div style="text-align:center">
     <button>⛰️</button>
