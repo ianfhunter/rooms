@@ -21,7 +21,7 @@ The doors lock behind you. It seems you cannot proceed without solving the puzzl
 A dead priest lies nearby with a bite wound on his leg. You find a set of scrolls in his pocket, compiled together in what seems like a diary:
 
 <div class="scroll">
-    <b>Day 11<b>
+    <b>Day 11</b>
     The road is long and boresome. We passed by a few minor shrines. We stopped at the one for Travel, it was amusing to see someone had confused it with the Harvest. I'm sure the humans who visit the shrine next won't mind the offering of baked good though.
     <p></p>
     <b>Day 24</b>
