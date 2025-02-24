@@ -30,6 +30,8 @@ A dead priest lies nearby, You find a scroll in his pocket:
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
+.tg th{ background-color: #bcf3ff; }
+.tg tr:nth-child(2n){ background-color: #bcf3ff; }
 </style>
 <table class="tg"><thead>
   <tr>
