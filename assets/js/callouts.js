@@ -1,34 +1,15 @@
-// // add icon and label to parent
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const monsterContent = '<i class="fa fa-ghost"></i>Monster:'
-//     const itemContent = '<i class="fa-solid fa-khanda"></i>Item:'
-//     const puzzleContent = "<i class="fa-solid fa-puzzle-piece"></i>Puzzle:"
-  
-//     const targets = document.querySelectorAll('.monster, .item, .puzzle')
-  
-//     targets.forEach(parent => {
-//       const child = document.createElement('span')
-//       child.classList.add('icon')
-//       if (parent.classList.contains('monster')) {
-//         child.innerHTML = monsterContent
-//         parent.prepend(child)
-//       } else if (parent.classList.contains('item')) {
-//         child.innerHTML = itemContent
-//         parent.prepend(child)
-//       }else if (parent.classList.contains('puzzle')) {
-//         child.innerHTML = puzzleContent
-//         parent.prepend(child)
-//       }
-//     })
-//   })
+function title_case(s)
+{
+    return String(s[0]).toUpperCase() + String(s).slice(1);
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     // Define a mapping of class names to their corresponding content
     const contentMap = {
-        'monster': '<i class="fa fa-ghost"></i>Monster:',
-        'item': '<i class="fa-solid fa-khanda"></i>Item:',
-        'puzzle': '<i class="fa-solid fa-puzzle-piece"></i>Puzzle:'
+        'monster': 'fa fa-ghost',
+        'item':    'fa-solid fa-khanda',
+        'puzzle':  'fa-solid fa-puzzle-piece',
+        'scroll':  'fa-solid fa-scroll'
     };
 
     // Create a selector string from the keys of contentMap
@@ -45,7 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const className = Array.from(parent.classList).find(cls => contentMap[cls]);
 
         if (className) {
-            child.innerHTML = contentMap[className];
+            child.innerHTML = 
+                '<i class="' + contentMap[className] + '"></i>' + title_case(className) + ":";
             parent.prepend(child);
         }
     });

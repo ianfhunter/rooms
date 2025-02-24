@@ -60,9 +60,9 @@ When you speak a word aloud while looking into the mirror, the mirror will refle
             document.getElementById('message').textContent = 'Wrong order! Try again.';
             userOrder = []; // Reset the order
         } else if (userOrder.length === correctOrder.length) {
-            document.getElementById('message').textContent = 'Correct order! Well done!';
+            document.getElementById('message').textContent = 'The Doors Unlock!';
         } else {
-            document.getElementById('message').textContent = 'Keep going...';
+            document.getElementById('message').textContent = '';
         }
     }
 </script>
