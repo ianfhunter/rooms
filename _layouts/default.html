@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body class="
+    {% assign body_classes = '' %}
+    {% if page.weather == 'snow' %}
+        {% assign body_classes = body_classes | append: 'weather snow ' %}
+    {% elsif page.weather == 'rain' %}
+        {% assign body_classes = body_classes | append: 'weather rain ' %}
+    {% endif %}
+    {{ body_classes | strip }}
+">
+    <header>
+        <h1>{{ site.title }}</h1>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+</body>
+</html>
