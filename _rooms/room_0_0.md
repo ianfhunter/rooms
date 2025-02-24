@@ -11,20 +11,22 @@ As you enter, the air feels thick with anticipation. The walls are adorned with 
 {% comment %}
 Answer: F W E A W F A
 {% endcomment %}
-<audio controls>
+<!-- <audio controls>
   <source src="{{ '/assets/audio/whispers.wav' | relative_url }}" type="audio/wav">
-   Your browser does not support the audio. However, it does appear there's a scroll nearby instead.
+   
+</audio> -->
 
-   <div class="scroll">
-      Confirmed
-      Afterwards
-      Charter
-      Cavalier
-      Strawberries
-      Suffering
-      Viscera
-   </div>
-</audio>
+<div class="scroll">
+    It appears there's a scroll nearby. The contents seems like nonsense.
+
+    Confirmed
+    Afterwards
+    Charter
+    Cavalier
+    Strawberries
+    Suffering
+    Viscera
+</div>
 
 The doors lock behind you. It seems you cannot proceed without solving the puzzle.
 
