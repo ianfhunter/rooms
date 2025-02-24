@@ -30,3 +30,9 @@ kramdown:
 collections:
   rooms:
     output: true
+
+# https://just-the-docs.com/docs/configuration/#callouts
+callouts:
+  item:
+    title: Item
+    color: yellow
