@@ -16,8 +16,18 @@ Answer: F W E A W F A
    
 </audio> -->
 
+The doors lock behind you. It seems you cannot proceed without solving the puzzle.
+
+<div class="puzzle" data-puzzle-name="The Whispering Runes">
+<b>The Whispering Runes</b>
+
+There are four sets of runes on the walls, each representing a different element: Fire, Water, Earth, and Air. Each set has three runes, each inscribed with a word related to its element (e.g., Fire: Flame, Ember, Ash).
+
+When you speak a word aloud while looking into the mirror, the mirror will reflect a faint glow if the word is part of the correct sequence. If the word is incorrect, the mirror remains dark.
+
+
 <div class="scroll">
-    It appears there's a scroll nearby. The contents seems like nonsense.
+    It appears there's a scroll nearby. However, the contents seems like nonsense.
 
     <ul>
         <li>Confirmed</li>
@@ -30,14 +40,6 @@ Answer: F W E A W F A
     </ul>
 </div>
 
-The doors lock behind you. It seems you cannot proceed without solving the puzzle.
-
-<p class="puzzle" data-puzzle-name="The Whispering Runes">
-<b>The Whispering Runes</b>
-
-There are four sets of runes on the walls, each representing a different element: Fire, Water, Earth, and Air. Each set has three runes, each inscribed with a word related to its element (e.g., Fire: Flame, Ember, Ash).
-
-When you speak a word aloud while looking into the mirror, the mirror will reflect a faint glow if the word is part of the correct sequence. If the word is incorrect, the mirror remains dark.
 <div style="text-align:center">
     <button>⛰️</button>
     <button>🔥</button>
@@ -71,4 +73,4 @@ When you speak a word aloud while looking into the mirror, the mirror will refle
     }
 </script>
 
-</p>
+</div>
