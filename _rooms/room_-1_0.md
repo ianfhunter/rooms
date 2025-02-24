@@ -1,7 +1,7 @@
 ---
 layout: room
 title: "Bucket Room"
-weather: "raining"
+weather: "rain"
 ---
 
 It is raining in this room.
