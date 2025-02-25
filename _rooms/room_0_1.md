@@ -1,6 +1,6 @@
 ---
 layout: room
-title: "Bucket Room"
+title: "A Fishy Bucket"
 ---
 
 {% comment %}
