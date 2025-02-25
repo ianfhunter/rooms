@@ -339,33 +339,39 @@ A dead priest lies nearby with a bite wound on his leg. You find a set of scroll
 
 
 <div style="text-align:center">
-    <button>Submit</button>
+    <button onclick="checkAnswers()">Submit</button>
 </div>
 <p id="message"></p>
 
 <script>
-    const correctOrder = ['⛰️', '🔥', '🌪️', '🌊', '🔥', '🌊', '🌪️'];
-    let userOrder = [];
+function checkAnswers() {
+    const answers = {
+        "aela":  ["Icicle",   "Winter",  "Dreams",  "Goblins", "Dragon"],
+        "sovik": ["Coin",     "War",     "Trade",   "Dwarves", "Snake"],
+        "wiim":  ["Spear",    "Love",    "Nature",  "Elves",   "Owl"],
+        "bru":   ["Raindrop", "Death",   "Harvest", "Fairies", "Horse"],
+        "losh":  ["Sickle",   "Justice", "Travel",  "Humans",  "Dire wolf"]
+    };
 
-    const buttons = document.querySelectorAll('button');
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            userOrder.push(button.textContent);
-            checkOrder();
-        });
-    });
-
-    function checkOrder() {
-        const currentIndex = userOrder.length - 1;
-        if (userOrder[currentIndex] !== correctOrder[currentIndex]) {
-            document.getElementById('message').textContent = 'Wrong order! Try again.';
-            userOrder = []; // Reset the order
-        } else if (userOrder.length === correctOrder.length) {
-            document.getElementById('message').textContent = 'The Doors Unlock!';
-        } else {
-            document.getElementById('message').textContent = '';
+    let correct = true;
+    for (const [key, value] of Object.entries(answers)) {
+        for (let i = 0; i < value.length; i++) {
+            const select = document.getElementById(`${key}-${["symbol", "major", "minor", "worshippers", "companion"][i]}`);
+            if (select.value !== value[i]) {
+                correct = false;
+                break;
+            }
         }
+        if (!correct) break;
     }
+
+    const message = document.getElementById("message");
+    if (correct) {
+        message.textContent = "Correct! You may proceed.";
+    } else {
+        message.textContent = "Incorrect. Please try again.";
+    }
+}
 </script>
 
 </div>
